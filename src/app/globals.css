@@ -1,26 +1,64 @@
+@import "@fontsource/mukta/400.css";
+@import "@fontsource/mukta/500.css";
+@import "@fontsource/mukta/600.css";
+@import "@fontsource/mukta/700.css";
+@import "@fontsource/mukta/800.css";
+@import "@fontsource/teko/500.css";
+@import "@fontsource/teko/600.css";
+@import "@fontsource/teko/700.css";
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* NAYAK brand: taken from the seal logo and the Manthan poster */
+@theme {
+  --color-paper: #efe5d3;
+  --color-paper-light: #f7f1e6;
+  --color-paper-dark: #e4d6bd;
+  --color-navy: #15284a;
+  --color-navy-deep: #0e1c36;
+  --color-navy-soft: #3a4660;
+  --color-red: #ac241c;
+  --color-red-dark: #8c1b15;
+  --color-gold: #c9a25a;
+  --color-gold-light: #f6ddb0;
+  --color-ink: #1d2433;
+  --color-muted: #4a5568;
+
+  --font-sans: "Mukta", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Teko", "Mukta", ui-sans-serif, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-paper);
+  background-image: url("/images/paper.webp");
+  background-size: 1600px auto;
+  color: var(--color-ink);
+}
+
+::selection {
+  background: var(--color-red);
+  color: var(--color-paper-light);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+/* Torn brush stroke under a word, like the poster */
+.brush-under {
+  background-image: url("/images/brush-red.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 0.14em;
+  background-position: 0 100%;
+  padding-bottom: 0.1em;
+}
+
+.brush-band {
+  background-image: url("/images/brush-navy.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
