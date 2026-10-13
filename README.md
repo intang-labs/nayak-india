@@ -66,3 +66,9 @@ Most copy lives in [`src/lib/content.ts`](src/lib/content.ts): values, vision go
 the WhatsApp group link (`SITE.whatsappGroupUrl`, leave empty to hide WhatsApp buttons). Page layouts are in `src/app/*/page.tsx`.
 
 Images in `public/images/` are cut from the Manthan poster (seal, torn-edge photos, paper texture, brush strokes, `og.jpg` share image).
+
+## License
+
+The code is released under the [MIT License](LICENSE) © 2026 Anish Saxena.
+The NAYAK name, seal, photographs and organisational content are **not** covered by it and remain all rights reserved.
+See [NOTICE.md](NOTICE.md) for exactly what is covered and for third-party licenses (the Teko and Mukta fonts are SIL OFL 1.1).

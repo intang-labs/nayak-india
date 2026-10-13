@@ -2,6 +2,8 @@
   "name": "nayak-india",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
+  "author": "Anish Saxena",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
